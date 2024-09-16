@@ -12,14 +12,18 @@ jobs:
 
       - run: unzip *.zip
 
-      - run: ls -al
-        shell: bash
-
       - run: |
           sed -i -e "s/powershell/pwsh/" uup_download_windows.cmd
           sed -i -e 's/$/\r/g' uup_download_windows.cmd
           
       - run: .\uup_download_windows.cmd
 
-      - run: ls -al && tree
+      - run: split -b 1900M -d *.ISO WIN11.ISO
         shell: bash
+
+
+      - run: gh release create Win11ISO WIN11.ISO??
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+      
