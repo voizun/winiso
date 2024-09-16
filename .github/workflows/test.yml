@@ -1,0 +1,15 @@
+name: Win11ISO
+
+on:
+  workflow_dispatch:
+
+jobs:
+  Win11ISO:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - run: unzip *.zip
+
+      - run: ls -al
