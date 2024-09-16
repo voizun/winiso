@@ -15,8 +15,10 @@ jobs:
       - run: ls -al
         shell: bash
 
-      - run: sed -i -e "s/powershell/pwsh/" uup_download_windows.cmd
-
+      - run: |
+          sed -i -e "s/powershell/pwsh/" uup_download_windows.cmd
+          sed -i -e 's/$/\r/g' uup_download_windows.cmd
+          
       - run: .\uup_download_windows.cmd
 
       - run: ls -al && tree
