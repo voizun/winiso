@@ -15,7 +15,7 @@ jobs:
       - run: ls -al
         shell: bash
 
-      - run: .\uup_download_windows.cmd
+      - run: pwsh uup_download_windows.cmd
 
       - run: ls -al && tree
         shell: bash
