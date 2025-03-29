@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - run: unzip *.zip
+      - run: unzip 26100.3*.zip
 
       - run: |
           sed -i -e "s/powershell/pwsh/" uup_download_windows.cmd
