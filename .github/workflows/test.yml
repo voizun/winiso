@@ -18,7 +18,7 @@ jobs:
           
       - run: .\uup_download_windows.cmd
 
-      - run: split -b 1900M -d *.ISO WIN11.ISO
+      - run: split -b 2000M -d *.ISO WIN11.ISO
         shell: bash
 
 
