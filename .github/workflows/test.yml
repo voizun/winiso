@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - run: unzip 26200.6584_amd64_ja-jp_professional_8fa6ad88_convert.zip
+      - run: unzip win11_25h2.zip
 
       - run: |
           sed -i -e "s/powershell/pwsh/" uup_download_windows.cmd
