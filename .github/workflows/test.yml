@@ -5,7 +5,7 @@ on:
 
 jobs:
   Win11ISO:
-    runs-on: windows-latest
+    runs-on: windows-2025
     steps:
       - name: Checkout
         uses: actions/checkout@v4
