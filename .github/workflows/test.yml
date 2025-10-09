@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - run: unzip WIN11_25H2_WITH_MS_STORE.zip
+      - run: unzip *.zip
 
       - run: |
           sed -i -e "s/powershell/pwsh/" uup_download_windows.cmd
