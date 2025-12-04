@@ -16,7 +16,7 @@ jobs:
           sed -i -e "s/powershell/pwsh/" uup_download_windows.cmd
           sed -i -e 's/$/\r/g' uup_download_windows.cmd
           cd Drivers
-          curl -L -O GPD-All-WIN10_X64_drivers_V6.tar.zst "https://drive.usercontent.google.com/download?id=1qBe9-JKIFFoln4hxt-XbbF-j8hTaFplx&export=download&authuser=4&confirm=t&uuid=df8762d1-655a-42f4-9e83-de218041a242&at=ALWLOp7HBaq_aWDhZyXylB1YjfCS:1764812117473"
+          curl -L -o GPD-All-WIN10_X64_drivers_V6.tar.zst "https://drive.usercontent.google.com/download?id=1qBe9-JKIFFoln4hxt-XbbF-j8hTaFplx&export=download&authuser=0&confirm=t&uuid=c89118e5-7c9e-4b03-b610-227e064a4ba3&at=ALWLOp4Kw9UyTOWc36R2a4yq8Dij%3A1764812385835"
           tar xf GPD-All-WIN10_X64_drivers_V6.tar.zst
           tree
           
