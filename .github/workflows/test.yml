@@ -15,6 +15,10 @@ jobs:
       - run: |
           sed -i -e "s/powershell/pwsh/" uup_download_windows.cmd
           sed -i -e 's/$/\r/g' uup_download_windows.cmd
+          cd Drivers
+          curl -LOC- "https://drive.usercontent.google.com/download?id=1bH1ysDkHJzTL98QR5X6XSvTaZeV-mZMC&export=download&authuser=1&confirm=t&uuid=2036685c-08a1-463d-895c-b5d192711e2d&at=ALWLOp4Ja8dzInfFiG4cxpdUXSbY%3A1764808309795"
+          unzip *.zip
+          tree
           
       - run: .\uup_download_windows.cmd
 
